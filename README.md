@@ -1,6 +1,4 @@
 
-
-````markdown
 ## Steps to Run the Project
 
 ### Step 1: Run the Backend Server (Django API)
@@ -11,7 +9,6 @@
 
    ```bash
    python manage.py runserver
-````
 
 ### Step 2: Test the API (Choose One Method)
 
