@@ -40,46 +40,10 @@
 
    * Go to **File > Import**.
    * Select the Postman collection file.
-3. Use the imported collection to test the API endpoints for:
+3. Use the imported collection in to test the API endpoints for:
 
    * **Registering users**
    * **Logging in**
    * **protected API (show profile)** after obtaining the token.
 
 ---
-
-
-* **الخطوة الأولى**: تشغيل السيرفر الخاص بـ Django (API) في نافذة طرفية باستخدام الأمر:
-
-  ```bash
-  python manage.py runserver
-  ```
-
-  هذا يشغل الـ API في `http://127.0.0.1:8000`.
-
-* **الخطوة الثانية**: يمكنك اختبار الـ API باستخدام إحدى الطريقتين:
-
-  * **الطريقة الأولى**: تشغيل السيرفر الخاص بالواجهة الأمامية (Frontend) باستخدام الأمر:
-
-    ```bash
-    python -m http.server 5500
-    ```
-
-    هذا يشغل الواجهة في `http://127.0.0.1:5500`.
-
-    ثم يمكنك زيارة صفحات الـ API مثل [تسجيل الدخول](http://localhost:5500/login.html) و [التسجيل](http://localhost:5500/register.html).
-
-  * **الطريقة الثانية**: استيراد كوليكشن Postman لاختبار الـ API.
-
-    * استيراد كوليكشن Postman واختبار الـ API من خلال:
-
-      * **تسجيل المستخدمين**
-      * **تسجيل الدخول**
-      * **الوصول إلى الـ API المحمي** لعرض الملف الشخصي بعد الحصول على التوكن.
-
-### ملاحظات:
-
-* تأكد من أنك في المجلد الصحيح قبل تشغيل الأوامر.
-* يمكن تغيير البورتات أو المسارات في حال كانت مختلفة في بيئة العمل الخاصة بك.
-
-```
